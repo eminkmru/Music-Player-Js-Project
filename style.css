@@ -20,3 +20,10 @@ body{
     margin-right: 8px;
 }
 
+.music-list-select{
+    cursor: pointer;
+}
+li.playing{
+    background-color: #0b5eb7;
+    color: white;
+}

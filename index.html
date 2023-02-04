@@ -52,7 +52,11 @@
         </div>
         <div class="card-footer bg-dark-subtle">
           <div>
-            <button class="btn btn-primary btn-sm">
+            <button
+              class="btn btn-primary btn-sm"
+              data-bs-toggle="collapse"
+              data-bs-target="#music-list"
+            >
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
@@ -67,6 +71,16 @@
               class="form-range"
             />
           </div>
+        </div>
+        <div id="music-list" class="collapse show">
+          <ul class="list-group list-group-flush">
+            <!-- <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              <span>İrem Derici - Acemi Balık</span>
+              <span class="badge bg-primary rounded-pill">3:40</span>
+            </li> -->
+          </ul>
         </div>
       </div>
     </div>
