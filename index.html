@@ -22,26 +22,50 @@
       <div class="card shadow-lg rounded">
         <img src="" alt="" id="music-image" />
         <audio src="" id="audio"></audio>
-        <div id="music-details">
+        <div id="music-details" class="text-center border-bottom my-3">
           <p class="title"></p>
           <p class="singer"></p>
         </div>
-        <div id="progress">
-          <input type="range" id="progress-bar" />
-          <div class="times">
-            <span id="current-time">0:00</span>
-            <span id="duration">0:00</span>
+        <div class="card-body">
+          <div id="progress">
+            <input type="range" id="progress-bar" class="form-range" />
+            <div class="times">
+              <span id="current-time">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+
+          <div id="controls" class="text-center">
+            <button id="prev" class="btn btn-primary rounded-circle">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button
+              id="play"
+              class="btn btn-primary rounded-circle btn-lg mx-2"
+            >
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="next" class="btn btn-primary rounded-circle">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
           </div>
         </div>
-        <div id="controls">
+        <div class="card-footer bg-dark-subtle">
           <div>
-            <i id="prev" class="fa-solid fa-backward-step"></i>
-            <i id="play" class="fa-solid fa-play"></i>
-            <i id="next" class="fa-solid fa-forward-step"></i>
+            <button class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
-          <div>
+          <div class="volume-container">
             <i id="volume" class="fa-solid fa-volume-high"> </i>
-            <input type="range" name="" id="volume-bar" max="100" value="100" />
+            <input
+              type="range"
+              name=""
+              id="volume-bar"
+              max="100"
+              value="100"
+              class="form-range"
+            />
           </div>
         </div>
       </div>

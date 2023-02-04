@@ -41,7 +41,7 @@ next.addEventListener("click",()=>{ nextMusic(); })
 const playMusic = () => {
     audio.play();
     container.classList.add("playing");
-    play.classList = "fa-solid fa-pause";
+    play.querySelector("i").classList = "fa-solid fa-pause";
 
 }
 
@@ -55,7 +55,7 @@ const prevMusic = () => {
 const pauseMusic = () => {
    audio.pause(); 
    container.classList.remove("playing");
-   play.classList = "fa-solid fa-play";
+   play.querySelector("i").classList = "fa-solid fa-play";
 
 } 
 const nextMusic = () => {
@@ -100,6 +100,9 @@ volumeBar.addEventListener("input", (e) => {
         unmutedState();
         volumeState = 5;
     }
+    else if(value > 0){
+        mutedState();
+    }
 })
 
 volume.addEventListener("click", () => {
@@ -110,7 +113,7 @@ volume.addEventListener("click", () => {
         mutedState();
         volumeBar.value = volumeState;
         audio.volume = volumeState/100;
-    }
+    } 
 })
 
 let unmutedState = () =>{

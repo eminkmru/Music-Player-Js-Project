@@ -7,23 +7,16 @@ body{
 .container{
     width: 450px;
 }
-#controls i {
-    font-size: 30px;
-    color: purple;
-    margin-right: 20px;
-}
-#progress{
-    margin-bottom: 20px;
-}
+
 #progress .times,
-#controls{
+.card-footer,
+.volume-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#progress-bar{
-    width: 100%;
+
+.volume-container i {
+    margin-right: 8px;
 }
-#music-image{
-    width: 100%;
-}
+
