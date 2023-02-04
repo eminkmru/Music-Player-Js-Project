@@ -7,13 +7,13 @@ class Music {
     }
 
     getName() {
-        return this.title + " - " + this.singer;
+        return this.title;
     }
 }
 
 
 const musicList = [
     new Music("Daddy Issues","Neigbourhood","1.jpg", "1.mp3"),
-    new Music("Acemi Balık","irem Derici","acemi-balık.jpg", "iremDericiAcemiBalik.mp3"),
+    new Music("Acemi Balık","İrem Derici","acemi-balık.jpg", "iremDericiAcemiBalik.mp3"),
     new Music("Merhamet Yok","Orkundk ft Şehinşah","merhamet-yok.jpg", "orkundkSehinSahMerhametYok.mp3")
 ];
